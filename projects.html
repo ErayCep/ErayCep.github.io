@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+	    <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+    <div class="projects-container">
+        <h1>My Projects</h1>
+
+        <div class="project-card" onclick="openPopup('project1')">
+            <img src="img/project-1.png" alt="engine-dx">
+            <h2>engine-dx</h2>
+            <button>See More</button>
+        </div>
+
+        <div class="project-card" onclick="openPopup('project2')">
+            <img src="img/project-2.png" alt="Nova">
+            <h2>nova</h2>
+            <button>See More</button>
+        </div>
+
+        <div class="project-card" onclick="openPopup('project3')">
+            <img src="img/project-3.png" alt="Rusty-chip8">
+            <h2>Rusty-Chip8</h2>
+            <button>See More</button>
+        </div>
+
+        <!-- Popup windows -->
+        <div id="project1" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('project1')">&times;</span>
+                <h2>engine-dx Details</h2>
+                <p>This is a graphics engine developed with C++17 and DirectX 11. It has point and directional lighting, instancing, gltf model loading, and shadow mapping. You can review source code by the link below</p>
+		<a href= "https://github.com/ErayCep/engine-dx">Github</a>
+            </div>
+        </div>
+
+        <div id="project2" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('project2')">&times;</span>
+                <h2>Nova Details</h2>
+                <p>This was my first graphics engine. It is developed with C++17 and OpenGL. It has directional and point lights, shadow-mapping, instancing, skyboxes, and model loading(gltf, obj files etc.). You can view the project by the link below</p>
+		<a href="https://github.com/ErayCep/nova">Github</a>
+            </div>
+        </div>
+
+        <div id="project3" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('project3')">&times;</span>
+                <h2>Rusty-Chip8 Details</h2>
+                <p>This is a chip8 emulator developed with Rust Programming Language. Chip-8 was the first processor used in video games. Due to it's rather simple nature, and my interest in low level programming I tried to develop an emulator for it. I used SDL2 for windowing and chip-8 reference manual for programming. You can view the project by the link below</p>
+		<a href="https://github.com/ErayCep/rusty-chip8">Github</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

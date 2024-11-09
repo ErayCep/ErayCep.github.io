@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>About Me</h1>
+        <p>Hi, my names is Eray Çepni and I'm 21 years old. I am a software engineer interested in embedded systems and low level programming.</p>
+
+        <!-- See More button -->
+        <button id="seeMoreBtn" onclick="toggleMoreInfo()">See More</button>
+
+        <!-- Hidden additional information -->
+        <div id="moreInfo" class="hidden-info">
+            <p>I have experience with C/C++ programming languages and STM32 microcontroller family, and I am constantly improving myself on hardware design. In my spare time, I enjoy working on personal projects, participate in simracing leagues.</p>
+            <p>In addition, I am also interested in graphics programming and have some experience with graphics engine development.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
